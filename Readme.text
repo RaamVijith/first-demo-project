@@ -1,0 +1,40 @@
+# Project Installation
+
+## Pre - Req
+1. NPM V9 >
+2. Postgres DB
+
+## Installation
+
+### Configuration Change
+
+#### config.json
+```
+  "development": {
+    "username": "postgres",
+    "password": "{your db password}",
+    "database": "indice_dev_2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+
+```
+
+#### usDirectoryLinks.js
+```
+  const env = "{changeThis}"
+
+```
+
+#### Terminal
+```bash
+install postgreSQL
+npm install
+npx sequelize-cli db:create
+npx sequelize-cli db:migrate
+npm run dev
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
