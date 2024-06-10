@@ -22,8 +22,8 @@ const DestinationsOne = ({ titleOne,titleTwo,paddingBottom70,stateData }) => {
           </div>:''}
 
           <div className='row'>
-          {/*
-            {Array.isArray(stateData.data) ? (
+          
+            {Array.isArray(stateData) ? (
               stateData.data.map((state, index) => {
 
                 const columnClasses = [
@@ -57,7 +57,7 @@ const DestinationsOne = ({ titleOne,titleTwo,paddingBottom70,stateData }) => {
               <p>No state data available.</p>
             )}
 
-            */}
+            
             {/* <div className='col-lg-8 col-sm-12 col-md-12'>
               <div className='single-destinations-box color-box-shadow'>
                 <img src='/images/destinations/destinations9.jpg' alt='image' />

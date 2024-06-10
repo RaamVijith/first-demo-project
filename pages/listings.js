@@ -6,6 +6,7 @@ import ListingArea from "../components/Listings/ListingArea";
 import Footer from "../components/_App/Footer";
 import { withRouter, useRouter } from "next/router";
 import baseUrl from "../utils/baseUrl";
+import systemApiBaseUrl from "../utils/usDirectoryLinks";
 const listImage = "../images/empty-listing.png";
 
 const Listings = ({ user, listings, totalPages }) => {
@@ -54,7 +55,7 @@ Listings.getInitialProps = async ({ query }) => {
 			sortOrder
 		},
 	};
-	const url = 'http://127.0.0.1:8000/api/v1/business/fetch';
+	const url = `${systemApiBaseUrl.api.baseUrl}/api/v1/business/fetch`;
 	// const url = `${baseUrl}/api/v1/listings`;
 	const response = await axios.get(url, payload);
 	return response.data;
