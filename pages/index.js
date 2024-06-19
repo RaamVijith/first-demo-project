@@ -63,8 +63,8 @@ export async function getServerSideProps({ query }) {
 	const categoryResponse = await axios.get(categoryUrl,payload);
 	return {
 		props: {
-			//listings: response.data.listings,
-			//totalPages: response.data.totalPages,
+			listings: response.data.listings,
+			totalPages: response.data.totalPages,
 			categoryData: categoryResponse.data, 
 		},
 	};
