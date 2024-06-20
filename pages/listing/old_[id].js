@@ -648,7 +648,8 @@ const SingleListings = ({ user, listing, images }) => {
 
 export async function getServerSideProps({ query }) {
   const id = query.id;
-  const res = await axios.get(`${baseUrl}/api/v1/listings/${id}`);
+  // const res = await axios.get(`${baseUrl}/api/v1/listings/${id}`);
+  const res = await axios.get(`${systemApiBaseUrl.api.baseUrl}/api/v1/business/get-single-business/${id}`);
   const listing = await res.data;
 
   return {

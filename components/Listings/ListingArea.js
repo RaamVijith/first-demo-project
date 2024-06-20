@@ -89,7 +89,7 @@ const ListingArea = ({ listings, totalPages }) => {
 																			src={gal.replace(/^http:\/\//i, "https://")}                                      
 																			alt="image"
 																		/>
-																		<Link href={`/listing/${list.id}`}>
+																		<Link href={`/listing/${list.slug}`}>
 																			<a className="link-btn"></a>
 																		</Link>
 																	</div>
