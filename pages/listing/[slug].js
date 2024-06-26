@@ -25,11 +25,10 @@ const SingleListings = ({ user, listing, images }) => {
             <div className='container'>
               <div className='listings-details-content'>
                 <span className='meta'>
-                  <i className='flaticon-furniture-and-household'></i>
-                   {/* <img src={listing.category.icon} alt={listing.category.name} className='w-8 h-8 object-contain' /> */}
-                   
+                  {/* <i className='flaticon-furniture-and-household'></i> */}
+                   <img src={listing.category.icon} alt={listing.category.name} width={30} height={30}   />                   
               
-                  {listing.category.name}
+                  .  { listing.category.name}
                 </span>
 
                 <h3>{listing.name}</h3>
