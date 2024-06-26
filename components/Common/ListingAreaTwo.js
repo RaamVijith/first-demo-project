@@ -30,7 +30,7 @@ const ListingAreaTwo = ({
 								(list) =>
 									list.status === "active" && (
 										<div
-											className="col-xl-4 col-lg-6 col-md-6"
+											className="col-xl-4 col-lg-6 col-md-6 mb-4"
 											key={list.id}
 										>
 											<div className="single-listings-box">
@@ -53,7 +53,7 @@ const ListingAreaTwo = ({
 																			alt="image"
 																		/>
 																		<Link
-																			href={`/listing/${list.id}`}
+																			href={`/listing/${list.slug}`}
 																		>
 																			<a className="link-btn"></a>
 																		</Link>
@@ -102,7 +102,7 @@ const ListingAreaTwo = ({
 													</ul>
 													<h3>
 														<Link
-															href={`/listing/${list.id}`}
+															href={`/listing/${list.slug}`}
 														>
 															<a>
 																{
