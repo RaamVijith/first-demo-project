@@ -105,7 +105,9 @@ const Navbar = ({ userRole }) => {
                 </a>
               </Link>
               <div className='collapse navbar-collapse mean-menu'>
-                <form
+
+              {/* Search bar */}
+                {/* <form
                   className='navbar-search-box search-box-one'
                   onSubmit={handleSearch}
                 >
@@ -120,7 +122,7 @@ const Navbar = ({ userRole }) => {
                     name='search'
                     onChange={handleChange}
                   />
-                </form>
+                </form> */}
 
                 <ul className='navbar-nav'>
                   <li className='nav-item'>
@@ -135,6 +137,8 @@ const Navbar = ({ userRole }) => {
                     </Link>
                   </li>
 
+                  {/* Header items - (About Us, Pages, Blogs, Contect) */}
+                  {/* 
                   <li className='nav-item'>
                     <Link href='/about' activeClassName='active'>
                       <a className='nav-link'>About Us</a>
@@ -225,7 +229,7 @@ const Navbar = ({ userRole }) => {
                     <Link href='/contact' activeClassName='active'>
                       <a className='nav-link'>Contact</a>
                     </Link>
-                  </li>
+                  </li> */}
 
                   {userRole &&
                     (userRole.role === 'user' || userRole.role === 'admin') && (
@@ -325,6 +329,8 @@ const Navbar = ({ userRole }) => {
                     )}
                 </ul>
 
+                {/* Login/Register Button, +Add Listing Button */}
+                {/* 
                 <div className='others-option d-flex align-items-center'>
                   <div className='option-item'>
                     {userRole &&
@@ -368,13 +374,16 @@ const Navbar = ({ userRole }) => {
                       )}
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </nav>
           </div>
         </div>
+        
 
-        <div className='others-option-for-responsive'>
+        {/* Header items - (About Us, Pages, Blogs, Contect) */}
+
+        {/* <div className='others-option-for-responsive'>
           <div className='container'>
             <div className='dot-menu' onClick={toggleMiniAuth}>
               <div className='inner'>
@@ -393,7 +402,7 @@ const Navbar = ({ userRole }) => {
               handleLogout={handleLogout}
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* ------ Auth Modal ------ */}

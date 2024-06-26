@@ -25,8 +25,10 @@ const SingleListings = ({ user, listing, images }) => {
             <div className='container'>
               <div className='listings-details-content'>
                 <span className='meta'>
-                  {/* <i className='flaticon-furniture-and-household'></i> */}
-                  <img src={listing.category.cat_icon} alt={listing.category.name} />
+                  <i className='flaticon-furniture-and-household'></i>
+                   {/* <img src={listing.category.icon} alt={listing.category.name} className='w-8 h-8 object-contain' /> */}
+                   
+              
                   {listing.category.name}
                 </span>
 
@@ -186,6 +188,8 @@ const SingleListings = ({ user, listing, images }) => {
                   </ul>
                 </div>
 
+              {/* Review component */}
+{/*               
                 <h3>Review</h3>
                 <div className='listings-review'>
                   <div className='rating d-flex align-items-center'>
@@ -785,7 +789,7 @@ const SingleListings = ({ user, listing, images }) => {
                       </div>
                     </form>
                   </div>
-                </div>
+                </div> */}
 
                 <h3>Other Nearby Services</h3>
                 <div className='row'>
