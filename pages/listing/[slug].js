@@ -70,7 +70,7 @@ const SingleListings = ({ user, listing, images }) => {
                   className='listings_details_content'
                   dangerouslySetInnerHTML={{ __html: listing.description}} 
                 />
-<h3>Amenities</h3>
+                <h3>Amenities</h3>
                 <ul className='amenities-list'>
                   <li>
                     <span>
@@ -166,7 +166,8 @@ const SingleListings = ({ user, listing, images }) => {
                   </div>
                 </div>
 
-                <h3>Pricing</h3>
+                {/* pricing */}
+                {/* <h3>Pricing</h3>
                 <div id='pricing'>
                   <ul className='pricing-list'>
                     <li>
@@ -185,7 +186,7 @@ const SingleListings = ({ user, listing, images }) => {
                       Orange Juice <span>$05</span>
                     </li>
                   </ul>
-                </div>
+                </div> */}
 
               {/* Review component */}
 {/*               
@@ -1034,7 +1035,7 @@ const SingleListings = ({ user, listing, images }) => {
       />
     </>
   );
-};
+};  
 
 // export async function getServerSideProps({ query }) {
 //   const id = query.id;

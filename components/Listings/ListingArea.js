@@ -75,7 +75,18 @@ const ListingArea = ({ listings, totalPages }) => {
                     <div className="col-xl-4 col-lg-6 col-md-6 mb-4" key={list.id}>
                       <div className="single-listings-box">
                         <div className="listings-image">
-													<Swiper 
+
+                        <div className="single-image">
+													<img
+														src={list.gallery.thumbnail}
+														alt="image"
+														/>
+													<Link href={`/listing/${list.slug}`} >
+														<a className="link-btn"></a>
+													</Link>
+												</div>
+
+													{/* <Swiper 
 														loop={true}
 														navigation={true} 
 														modules={[Navigation]} 
@@ -95,14 +106,15 @@ const ListingArea = ({ listings, totalPages }) => {
 																	</div>
 																</SwiperSlide>
                               ))}
-                          </Swiper>
+                          </Swiper> */}
 
-                          <a href="#" className="bookmark-save">
+                          {/* icons (setting, Bookmark) */}
+                          {/* <a href="#" className="bookmark-save">
                             <i className="flaticon-heart"></i>
                           </a>
                           <a href="#" className="category">
                             <i className="flaticon-cooking"></i>
-                          </a>
+                          </a> */}
                         </div>
 
                         <div className="listings-content">
@@ -115,8 +127,8 @@ const ListingArea = ({ listings, totalPages }) => {
                           <ul className="listings-meta">
                             <li>
                               <a href="#">
-                                {/* <i className="flaticon-hotel"></i> {list.category.name} */}
-                                <img className="flaticon-hotel" src={list.category.icon} />{list.category.name}
+                                <i className="flaticon-hotel"></i> {list.category.name}
+                                {/* <img className="flaticon-hotel" src={list.category.icon} /> */}
                               </a>
                             </li>
                             <li>

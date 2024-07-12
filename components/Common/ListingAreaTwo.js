@@ -35,7 +35,18 @@ const ListingAreaTwo = ({
 										>
 											<div className="single-listings-box">
 												<div className="listings-image">
-													<Swiper 
+
+												<div className="single-image">
+													<img
+														src={list.gallery.thumbnail}
+														alt="image"
+														/>
+													<Link href={`/listing/${list.slug}`} >
+														<a className="link-btn"></a>
+													</Link>
+												</div>
+
+												{/* <Swiper 
 														loop={true}
 														navigation={true} 
 														modules={[Navigation]} 
@@ -46,7 +57,7 @@ const ListingAreaTwo = ({
 																<SwiperSlide key={i}>
 																	<div className="single-image">
 																		<img
-																			src={gal.replace(
+																			src={gal.thumbnail.replace(
 																				/^http:\/\//i,
 																				"https://"
 																			)}
@@ -61,24 +72,27 @@ const ListingAreaTwo = ({
 																</SwiperSlide>
 															)
 														)}
-													</Swiper>
-
-													<a
+													</Swiper> */}
+													{/* icons */}
+													{/* <a
 														href="#"
 														className="bookmark-save"
 													>
 														<i className="flaticon-heart"></i>
-													</a>
-													<a
+													</a> */}
+
+
+													{/* <a
 														href="#"
 														className="category"
 													>
 														<i className="flaticon-cooking"></i>
-													</a>
+													</a> */}
 												</div>
 
 												<div className="listings-content">
-													<div className="author">
+												{/* admin icon */}
+													{/* <div className="author">
 														<div className="d-flex align-items-center">
 															<img
 																src="/images/user4.jpg"
@@ -86,7 +100,7 @@ const ListingAreaTwo = ({
 															/>
 															<span>Admin</span>
 														</div>
-													</div>
+													</div> */}
 													<ul className="listings-meta">
 														<li>
 															<a href="#">
@@ -129,12 +143,12 @@ const ListingAreaTwo = ({
 															</span>
 														</div>
 
-														<div className="price">
+														{/* <div className="price">
 															Start From{" "}
 															<span>
 																${list.pricing}
 															</span>
-														</div>
+														</div> */}
 													</div>
 												</div>
 											</div>
