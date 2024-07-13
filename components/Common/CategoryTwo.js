@@ -39,7 +39,8 @@ const Category = ({ titleOne, titleTwo, categoryData, showMoreCategories }) => {
                     </div>
                     <h3>{category.cat_name}</h3>
                     <span>{category.businessCount} Places</span>
-                    <Link href='/listings/?title=&location=&category=Restaurants'>
+                    {/* <Link href='/listings/?title=&location=&category=Restaurants'> */}
+                     <Link href={`/listings/?title=&location=&category=${category.cat_id}`}>
                       <a className='link-btn'></a>
                     </Link>
                   </div>

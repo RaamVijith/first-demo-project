@@ -70,6 +70,23 @@ const SingleListings = ({ user, listing, images }) => {
                   className='listings_details_content'
                   dangerouslySetInnerHTML={{ __html: listing.description}} 
                 />
+
+                {/* Dynamic Amenity */}
+                  {/* {listing.amenity.length > 0 && listing.amenity.map(
+                    ( list, i ) => (
+                      <ul className='amenities-list'>
+                        <li>
+                          <span>
+                            <i className='bx bx-check'></i> Parking Street
+                          </span>
+                        </li>
+                      </ul>
+                    )
+                  )
+                    
+                } */}
+
+
                 <h3>Amenities</h3>
                 <ul className='amenities-list'>
                   <li>
@@ -798,21 +815,21 @@ const SingleListings = ({ user, listing, images }) => {
                       <div className='listings-image'>
                         <img src='/images/listings/listings1.jpg' alt='image' />
                         <a href='#' className='link-btn'></a>
-                        <a href='#' className='bookmark-save'>
+                        {/* <a href='#' className='bookmark-save'>
                           <i className='flaticon-heart'></i>
                         </a>
                         <a href='#' className='category'>
                           <i className='flaticon-cooking'></i>
-                        </a>
+                        </a> */}
                       </div>
 
                       <div className='listings-content'>
-                        <div className='author'>
+                        {/* <div className='author'>
                           <div className='d-flex align-items-center'>
                             <img src='/images/user1.jpg' alt='image' />
                             <span>Taylor</span>
                           </div>
-                        </div>
+                        </div> */}
                         <ul className='listings-meta'>
                           <li>
                             <a href='#'>
@@ -889,21 +906,21 @@ const SingleListings = ({ user, listing, images }) => {
                           </SwiperSlide>
                         </Swiper>
 
-                        <a href='#' className='bookmark-save'>
+                        {/* <a href='#' className='bookmark-save'>
                           <i className='flaticon-heart'></i>
                         </a>
                         <a href='#' className='category'>
                           <i className='flaticon-cooking'></i>
-                        </a>
+                        </a> */}
                       </div>
 
                       <div className='listings-content'>
-                        <div className='author'>
+                        {/* <div className='author'>
                           <div className='d-flex align-items-center'>
                             <img src='/images/user2.jpg' alt='image' />
                             <span>Sarah</span>
                           </div>
-                        </div>
+                        </div> */}
                         <ul className='listings-meta'>
                           <li>
                             <a href='#'>
