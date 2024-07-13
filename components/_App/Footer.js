@@ -190,7 +190,7 @@ const Footer = ({ bgColor }) => {
           <div className='copyright-area'>
             <p>
               Copyright <span>Finding Pages</span> is Proudly Crafted by{' '}
-              <a href='#' target='_blank' rel='noreferrer'>
+              <a href='https://xiteb.com/' target='_blank' rel='noreferrer'>
                 Xiteb
               </a>
             </p>
