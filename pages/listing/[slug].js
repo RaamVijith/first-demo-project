@@ -71,7 +71,6 @@ const SingleListings = ({ user, listing, images }) => {
                   dangerouslySetInnerHTML={{ __html: listing.description}} 
                 />
 
-                {/* Dynamic Amenity */}
                   {/* {listing.amenity.length > 0 && listing.amenity.map(
                     ( list, i ) => (
                       <ul className='amenities-list'>
@@ -87,6 +86,8 @@ const SingleListings = ({ user, listing, images }) => {
                 } */}
 
 
+                {/* old Amenities */}
+                {/* 
                 <h3>Amenities</h3>
                 <ul className='amenities-list'>
                   <li>
@@ -149,9 +150,11 @@ const SingleListings = ({ user, listing, images }) => {
                       <i className='bx bx-check'></i> Accepts Credit Cards
                     </span>
                   </li>
-                </ul>
+                </ul> */}
 
-                <h3>Gallery</h3>
+
+                  {/* Gallery part */}
+                {/* <h3>Gallery</h3>
                 <div id='gallery'>
                   <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-6">
@@ -181,7 +184,7 @@ const SingleListings = ({ user, listing, images }) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* pricing */}
                 {/* <h3>Pricing</h3>
