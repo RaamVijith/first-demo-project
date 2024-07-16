@@ -71,19 +71,20 @@ const SingleListings = ({ user, listing, images }) => {
                   dangerouslySetInnerHTML={{ __html: listing.description}} 
                 />
 
-                  {/* {listing.amenity.length > 0 && listing.amenity.map(
+                  <h3>Amenities</h3>
+                  {listing.amenity.length > 0 && listing.amenity.map(
                     ( list, i ) => (
-                      <ul className='amenities-list'>
+                      <ul className='amenities-list' key={i}>
                         <li>
                           <span>
-                            <i className='bx bx-check'></i> Parking Street
+                            <i className='bx bx-check'></i> {list}
                           </span>
                         </li>
                       </ul>
                     )
                   )
                     
-                } */}
+                }
 
 
                 {/* old Amenities */}
@@ -152,6 +153,26 @@ const SingleListings = ({ user, listing, images }) => {
                   </li>
                 </ul> */}
 
+                  
+                <h3>Gallery</h3>
+                <div id='gallery'>
+                  <div className="row justify-content-center">
+
+                  {listing.gallery.length > 0 && listing.gallery.map(
+                    ( list, i ) => (
+                    <div className="col-lg-4 col-md-6" key={i}>
+                      <div className='single-image-bpx'>
+                        <img
+                          src={list.moreSnaps}
+                          alt='image'
+                        />
+                      </div>
+                    </div>
+                      )
+                    )
+                  }
+                  </div>
+                </div>
 
                   {/* Gallery part */}
                 {/* <h3>Gallery</h3>
