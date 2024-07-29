@@ -5,8 +5,8 @@ const Footer = ({ bgColor }) => {
     <>
       <footer className={`footer-area ${bgColor}`}>
         <div className='container'>
-          <div className='row'>
-            <div className='col-lg-3 col-sm-6 col-md-6'>
+          <div className='row '>
+            <div className='col-lg-4 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <h3>About</h3>
 
@@ -18,7 +18,7 @@ const Footer = ({ bgColor }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href='/blog'>
                       <a>
                         <i className='flaticon-left-chevron'></i> Recent News
@@ -32,7 +32,7 @@ const Footer = ({ bgColor }) => {
                         Relations
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href='/terms-and-condition'>
                       <a>
@@ -47,18 +47,18 @@ const Footer = ({ bgColor }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href='#'>
                       <a>
                         <i className='flaticon-left-chevron'></i> Careers
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
 
-            <div className='col-lg-3 col-sm-6 col-md-6'>
+            <div className='col-lg-4 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <h3>Discover</h3>
 
@@ -70,7 +70,7 @@ const Footer = ({ bgColor }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href='/events'>
                       <a>
                         <i className='flaticon-left-chevron'></i> Events
@@ -105,12 +105,12 @@ const Footer = ({ bgColor }) => {
                         <i className='flaticon-left-chevron'></i> Our Blog
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
 
-            <div className='col-lg-3 col-sm-6 col-md-6'>
+            {/* <div className='col-lg-3 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <h3>Business With Indice</h3>
 
@@ -160,21 +160,21 @@ const Footer = ({ bgColor }) => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
-            <div className='col-lg-3 col-sm-6 col-md-6'>
+            <div className='col-lg-4 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <h3>Languages</h3>
                 <div className='languages-switch'>
                   <select>
                     <option>English</option>
-                    <option>Spanish</option>
+                    {/* <option>Spanish</option>
                     <option>Russian</option>
-                    <option>Chinese</option>
+                    <option>Chinese</option> */}
                   </select>
                 </div>
 
-                <h3>Countries</h3>
+                {/* <h3>Countries</h3>
                 <div className='country-switch'>
                   <select>
                     <option>United States</option>
@@ -182,9 +182,10 @@ const Footer = ({ bgColor }) => {
                     <option>France</option>
                     <option>Spain</option>
                   </select>
-                </div>
+                </div> */}
               </div>
             </div>
+            
           </div>
 
           <div className='copyright-area'>

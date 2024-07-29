@@ -19,7 +19,9 @@ const SingleListings = ({ user, listing, images }) => {
 
       <section className='listings-details-area pb-70'>
         <div className='listings-details-image'>
-          <img src='/images/listings-details.jpg' alt='image' />
+          {/* <img src='/images/listings-details.jpg' alt='image' /> */}
+          <img src={listing.banner_image} alt='image' />
+
 
           <div className='container'>
             <div className='container'>
@@ -832,28 +834,28 @@ const SingleListings = ({ user, listing, images }) => {
                   </div>
                 </div> */}
 
-                <h3>Other Nearby Services</h3>
+                {/* <h3>Other Nearby Services</h3>
                 <div className='row'>
                   <div className='col-lg-6 col-md-6'>
                     <div className='single-listings-box'>
                       <div className='listings-image'>
                         <img src='/images/listings/listings1.jpg' alt='image' />
                         <a href='#' className='link-btn'></a>
-                        {/* <a href='#' className='bookmark-save'>
+                        <a href='#' className='bookmark-save'>
                           <i className='flaticon-heart'></i>
                         </a>
                         <a href='#' className='category'>
                           <i className='flaticon-cooking'></i>
-                        </a> */}
+                        </a> 
                       </div>
 
                       <div className='listings-content'>
-                        {/* <div className='author'>
+                        <div className='author'>
                           <div className='d-flex align-items-center'>
                             <img src='/images/user1.jpg' alt='image' />
                             <span>Taylor</span>
                           </div>
-                        </div> */}
+                        </div>
                         <ul className='listings-meta'>
                           <li>
                             <a href='#'>
@@ -930,21 +932,21 @@ const SingleListings = ({ user, listing, images }) => {
                           </SwiperSlide>
                         </Swiper>
 
-                        {/* <a href='#' className='bookmark-save'>
+                        <a href='#' className='bookmark-save'>
                           <i className='flaticon-heart'></i>
                         </a>
                         <a href='#' className='category'>
                           <i className='flaticon-cooking'></i>
-                        </a> */}
+                        </a> 
                       </div>
 
                       <div className='listings-content'>
-                        {/* <div className='author'>
+                         <div className='author'>
                           <div className='d-flex align-items-center'>
                             <img src='/images/user2.jpg' alt='image' />
                             <span>Sarah</span>
                           </div>
-                        </div> */}
+                        </div> 
                         <ul className='listings-meta'>
                           <li>
                             <a href='#'>
@@ -986,7 +988,7 @@ const SingleListings = ({ user, listing, images }) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
