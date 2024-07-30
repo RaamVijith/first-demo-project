@@ -53,7 +53,7 @@ const ListingArea = ({ listings, totalPages }) => {
                   </select>
                 </div>
 
-                <div className="select-box">
+                {/* <div className="select-box">
                   <label>Distance:</label>
                   <select className="blog-select">
                     <option>Driving (5 mi.)</option>
@@ -62,7 +62,7 @@ const ListingArea = ({ listings, totalPages }) => {
                     <option>Within 4 blocks</option>
                     <option>Bicycle (6 mi.)</option>
                   </select>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
