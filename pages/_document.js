@@ -18,6 +18,19 @@ class MyDocument extends Document {
             type="image/png" 
             href="/images/favicon.png"
           ></link>
+
+           {/* Google Tag Manager */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQSGMDDZXM"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MQSGMDDZXM');
+            `,
+          }}
+        />
         </Head>
         <body>
           <Main />
